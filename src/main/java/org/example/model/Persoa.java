@@ -9,9 +9,10 @@ import jakarta.persistence.*;
 public class Persoa {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    //sino borrar el id cuando usemos swagger en el boton
     // otra opcion seria
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     //@JsonIgnore
     private Long id;
     private String nome;
